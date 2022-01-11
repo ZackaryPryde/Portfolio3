@@ -1,6 +1,6 @@
 baseURL = "https://zackarypryde.netlify.app/"
 title = "Your title"
-themesDir = "../.."
+#themesDir = "../.."
 theme = "hugo-theme-m10c"
 paginate = 8
 
