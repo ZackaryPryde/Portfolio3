@@ -18,9 +18,9 @@ menu:
       weight: 3
 params:
   author: Zackary Pryde
+  avatar: C:/Users/pryde/OneDrive/Desktop/Career/Portfolio/Portfolio3/themes/hugo-theme-m10c/static/ME.jpeg
   description: Academic portfolio.
   menu_item_separator: '   '
-  avatar: themes/hugo-theme-m10c/static/ME.png/
   social:
     - icon: github
       name: GitHub
