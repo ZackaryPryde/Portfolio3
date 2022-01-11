@@ -20,7 +20,7 @@ params:
   author: Zackary Pryde
   description: Academic portfolio.
   menu_item_separator: '   '
-  avatar: "themes/hugo-theme-m10c/static/ME.png"
+  avatar: themes/hugo-theme-m10c/static/ME.png/
   social:
     - icon: github
       name: GitHub
