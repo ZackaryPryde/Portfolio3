@@ -18,7 +18,7 @@ menu:
       weight: 3
 params:
   author: Zackary Pryde
-  description: Academic portfolio.
+  description: 
   avatar: ME.png
   menu_item_separator: '   '
   social:
