@@ -19,6 +19,7 @@ menu:
 params:
   author: Zackary Pryde
   description: Academic portfolio.
+  avatar: ME.png
   menu_item_separator: '   '
   social:
     - icon: github
