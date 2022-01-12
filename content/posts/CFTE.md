@@ -12,6 +12,6 @@ tags:
 
 ## Presentation
 
-![View on YouTube](https://www.youtube.com/watch?v=LQEw9dZELrc)
+![](https://www.youtube.com/watch?v=LQEw9dZELrc)
 
 ## Certificate
