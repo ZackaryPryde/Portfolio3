@@ -17,7 +17,3 @@ In this post, I give a brief tutorial on how to construct a website just like th
 
 ## Getting started
 
-
-``` {html}
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LQEw9dZELrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-```
