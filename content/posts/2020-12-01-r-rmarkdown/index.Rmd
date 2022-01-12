@@ -3,7 +3,7 @@ title: "Making your own website!"
 author: "Zackary Pryde"
 date: 
 categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+tags: ["R Markdown", "Hugo", "GitHub", "Netlify"]
 ---
 
 ```{r setup, include=FALSE}
