@@ -12,7 +12,7 @@ tags:
 
 ## Presentation
 
-![View on YouTube](https://youtu.be/LQEw9dZELrc)
+[View on YouTube](https://youtu.be/LQEw9dZELrc)
 
 
 ## Certificate
