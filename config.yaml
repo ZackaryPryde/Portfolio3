@@ -1,5 +1,5 @@
 baseURL: https://zackarypryde.netlify.app/
-title: Zackary Pryde
+title: Projects
 theme: hugo-theme-m10c
 paginate: 8
 menu:
