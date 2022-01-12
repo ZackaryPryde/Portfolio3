@@ -7,6 +7,7 @@ tags:
   - GIS
   - R
   - GitHub
+  - Geospatial
 ---
 
 ## About this project
