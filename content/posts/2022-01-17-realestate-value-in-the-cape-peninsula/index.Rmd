@@ -56,12 +56,14 @@ CPM = st_read("CapePenMap.shp")
 CPMn = st_as_sf(CPM)
 CPMn = data.frame("Suburb" = CPM$NAME, "Median Price" = CPM$CP_Final2_, "No. listed" = CPM$CP_Final_1, CPM$geometry)
 CPMn = st_as_sf(CPMn)
+```
 
-# ggplot(CPMn) + 
+```{r, include=FALSE}
+# P = ggplot(CPMn) + 
 #   geom_sf(aes(fill = Median.Price)) + 
 #   scale_fill_gradient2()
 # 
-# ggplot(CPMn) + 
+# Nl = ggplot(CPMn) + 
 #   geom_sf(aes(fill = No..listed)) + 
 #   scale_fill_gradient2()
 
