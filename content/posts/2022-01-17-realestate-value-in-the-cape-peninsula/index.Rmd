@@ -26,7 +26,7 @@ blah blah blah blah
 
 ## The result
 
-```{r}
+```{r, echo=TRUE, eval=TRUE}
 CP_data_url = "https://github.com/ZackaryPryde/CP_Realestae/blob/main/Web%20scraping%201/CapePenMap.shp"
 CP_data = st_read(CP_data_url)
 
