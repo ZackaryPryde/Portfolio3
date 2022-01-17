@@ -8,6 +8,7 @@ tags:
   - R
   - GitHub
   - Geospatial
+  - Machine learning
 
 ---
 
