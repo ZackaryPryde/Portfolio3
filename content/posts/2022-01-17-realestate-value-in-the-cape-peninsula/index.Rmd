@@ -52,7 +52,22 @@ library(tmaptools)
 ```
 
 ```{r, include=TRUE}
-x = st_read("CapePenMap.shp")
+CPM = st_read("CapePenMap.shp")
+CPMn = st_as_sf(CPM)
+CPMn = data.frame("Suburb" = CPM$NAME, "Median Price" = CPM$CP_Final2_, "No. listed" = CPM$CP_Final_1, CPM$geometry)
+CPMn = st_as_sf(CPMn)
+
+mapview(CPMn, zcol = "Median.Price")
+
+# ggplot(CPMn) + 
+#   geom_sf(aes(fill = Median.Price)) + 
+#   scale_fill_gradient2()
+# 
+# ggplot(CPMn) + 
+#   geom_sf(aes(fill = No..listed)) + 
+#   scale_fill_gradient2()
+
+
 ```
 
 
