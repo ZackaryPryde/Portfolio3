@@ -26,6 +26,15 @@ blah blah blah blah
 
 ## The result
 
-```{r, echo=FALSE}
-htmltools::includeHTML("CP_M/CP_M.html")
+```{r}
+CP_data_url = "https://github.com/ZackaryPryde/CP_Realestae/blob/main/Web%20scraping%201/CapePenMap.shp"
+CP_data = st_read(CP_data_url)
+
+CPMn = st_as_sf(CPM)
+CPMn = data.frame("Suburb" = CPM$NAME, "Median Price" = CPM$CP_Final2_, "No. listed" = CPM$CP_Final_1, CPM$geometry)
+CPMn = st_as_sf(CPMn)
+
+mapview(CPMn)
 ```
+
+
