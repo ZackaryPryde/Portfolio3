@@ -26,15 +26,37 @@ blah blah blah blah
 
 ## The result
 
-```{r, echo=TRUE, eval=TRUE}
-CP_data_url = "https://github.com/ZackaryPryde/CP_Realestae/blob/main/Web%20scraping%201/CapePenMap.shp"
-CP_data = st_read(CP_data_url)
+```{r, echo=FALSE, eval=TRUE}
+# 1. Package installations ----
 
+# install.packages("rvest")
+# install.packages("dplyr")
+# install.packages("tmap")
+# install.packages("leaflet")
+# install.packages("tmaptools")
+
+# 2. Loading the required libraries ----
+
+library(rvest)
+library(dplyr)
+library(tidyr)
+library(rgdal)
+library(tidyverse)
+library(ggmap)
+library(sf)
+library(mapview)
+library(tmap)
+library(leaflet)
+library(tmaptools)
+
+```
+
+```{r, echo=TRUE, eval=TRUE}
+CPM = st_read("CapePenMap.shp")
 CPMn = st_as_sf(CPM)
 CPMn = data.frame("Suburb" = CPM$NAME, "Median Price" = CPM$CP_Final2_, "No. listed" = CPM$CP_Final_1, CPM$geometry)
 CPMn = st_as_sf(CPMn)
 
-mapview(CPMn)
 ```
 
 
