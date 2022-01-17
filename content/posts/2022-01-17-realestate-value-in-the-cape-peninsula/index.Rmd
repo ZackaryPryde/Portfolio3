@@ -25,3 +25,7 @@ blah blah blah blah
 
 
 ## The result
+
+```{r, echo=FALSE}
+htmltools::includeHTML("CP_M/CP_M.html")
+```
