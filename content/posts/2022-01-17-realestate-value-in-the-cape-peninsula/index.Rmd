@@ -52,7 +52,7 @@ library(tmaptools)
 ```
 
 ```{r, echo=TRUE, eval=TRUE}
-CPM = st_read("CapePenMap.shp")
+CPM = st_read("https://github.com/ZackaryPryde/Portfolio3/blob/340936faa4cc50f222c1f3eb877e5cf90cb9f4f9/content/posts/2022-01-17-realestate-value-in-the-cape-peninsula/CapePenMap.shp")
 CPMn = st_as_sf(CPM)
 CPMn = data.frame("Suburb" = CPM$NAME, "Median Price" = CPM$CP_Final2_, "No. listed" = CPM$CP_Final_1, CPM$geometry)
 CPMn = st_as_sf(CPMn)
