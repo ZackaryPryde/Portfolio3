@@ -51,8 +51,8 @@ library(tmaptools)
 
 ```
 
-```{r, echo=TRUE, eval=TRUE}
-
+```{r, include=TRUE}
+x = st_read("CapePenMap.shp")
 ```
 
 
