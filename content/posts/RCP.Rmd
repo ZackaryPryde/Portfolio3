@@ -1,8 +1,0 @@
----
-title: RCP
-author: Zackary Pryde
-date: '2022-01-17'
-tags: []
----
-
-# Heading 1
