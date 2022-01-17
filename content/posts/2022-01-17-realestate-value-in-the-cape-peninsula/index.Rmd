@@ -1,0 +1,18 @@
+---
+title: Realestate value in the Cape Peninsula
+author: Zackary Pryde
+date: '2022-01-17'
+slug: []
+categories: []
+tags:
+  - GIS
+  - Geospatial
+  - R
+  - Web scraping
+---
+
+# About this project
+
+# Result
+
+
