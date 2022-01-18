@@ -1,12 +1,16 @@
 ---
-date: "2022-01-12"
-tags:
-- R
-- Blogdown
-- Hugo
-- GitHub
-- Netlify
 title: Creating a personal website
+author: Zackary Pryde
+date: '2022-01-12'
+slug: []
+categories: []
+tags:
+  - R
+  - Blogdown
+  - Hugo
+  - Github
+  - Git
+  - Netlify
 ---
 
 ## Introduction
