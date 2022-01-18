@@ -8,7 +8,7 @@ tags:
   - Geospatial
   - GIS
   - R
-  - Web_scraping
+  - Web-scraping
 ---
 
 ## About this project

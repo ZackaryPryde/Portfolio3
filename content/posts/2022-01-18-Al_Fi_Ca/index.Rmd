@@ -10,7 +10,7 @@ tags:
   - Geospatial
   - Machine_learning
   - R
-  - R_markdown
+  - R-markdown
 ---
 
 # About this project
