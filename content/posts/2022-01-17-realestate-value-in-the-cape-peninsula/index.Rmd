@@ -66,8 +66,6 @@ CPMn = st_as_sf(CPMn)
 # Nl = ggplot(CPMn) + 
 #   geom_sf(aes(fill = No..listed)) + 
 #   scale_fill_gradient2()
-
-
 ```
 
 ```{r, include=TRUE, eval=TRUE}
