@@ -5,10 +5,10 @@ date: '2022-01-17'
 slug: []
 categories: []
 tags:
-  - "Geospatial"
-  - "GIS"
-  - "R"
-  - "Web scraping"
+  - Geospatial
+  - GIS
+  - R
+  - Web_scraping
 ---
 
 ## About this project
