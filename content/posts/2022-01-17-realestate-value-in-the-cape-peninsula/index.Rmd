@@ -68,7 +68,7 @@ CPMn = st_as_sf(CPMn)
 #   scale_fill_gradient2()
 ```
 
-```{r, include=TRUE, eval=TRUE}
+```{r, include=TRUE, echo=FALSE}
 mapview(CPMn, zcol = "Median.Price")
 ```
 
