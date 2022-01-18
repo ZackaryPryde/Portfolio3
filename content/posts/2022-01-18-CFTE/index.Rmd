@@ -14,6 +14,6 @@ tags:
 
 ## Presentation
 
-[View on YouTube](https://youtu.be/LQEw9dZELrc)
+embed the youtube video to html at the end of rmd editing otherwise it will be removed.
 
 ## Certificate
