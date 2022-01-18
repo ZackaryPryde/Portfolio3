@@ -5,12 +5,12 @@ date: '2022-01-12'
 slug: []
 categories: []
 tags:
-  - R
-  - Blogdown
-  - Hugo
-  - Github
-  - Git
-  - Netlify
+  - "R"
+  - "Blogdown"
+  - "Hugo"
+  - "Github"
+  - "Git"
+  - "Netlify"
 ---
 
 ## Introduction
