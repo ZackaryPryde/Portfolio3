@@ -6,11 +6,9 @@ My name is Zackary, but most people know me as Zack. I am a B. Sc. qualified ind
 
 ## My academic journey
 
-My academic journey ...
+In my early university years, just like most young academics, the road ahead was not clear. Initially, my majors were physical sciences and human anatomy. In light of a schedule complication, I had to choose between the two. I went into my second academic year majoring in physical sciences and mathematics. Although this was the wrong decision for me in the long run, I was able to pick up some valuable skills along the way, and specifically, I became passionate for the science of data during this period. 
 
-In my first year of study I ... . My majors were ... . 
-
-In my final years, I moved towards a passion in the biological sciences with a strong focus on quantitative techniques. My majors are Biology and Applied Statistics. 
+In my final years at university, I had become aware of my academic strengths and personal interests. I had now chosen to major in biological science and applied statistics, and these majors were here to stay. Currently, I am expecting to graduate in June, 2022, with a science degree in the abovementioned fields. Although my academic journey was longer than I had initially expected, I am proud to say that I have learned invaluable skills in multiple   fields of science, while growing personally throughout this period of my career. 
 
 ## Hobbies
 
