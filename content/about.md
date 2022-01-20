@@ -12,4 +12,14 @@ In my final years at university, I had become aware of my academic strengths and
 
 ## Hobbies
 
+Technological innovation. 
+
+DIY projects. 
+
+Botany. 
+
+Teaching. 
+
 ## Sports
+
+Judo. Athletics.
