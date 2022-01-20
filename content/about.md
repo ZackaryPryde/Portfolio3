@@ -2,7 +2,7 @@
 title: About
 ---
 
-My name is Zackary, but most people know me as Zack. I am a B. Sc. qualified individual with a passion for the areas of science related to our world and its future. My skills surround technological innovation and how we can use data to solve problems. With a strong understanding of the biological world, my education has sparked a specific interest in environmental problem solving. The most important lesson that I have learnt throughout my academic journey is that the solutions to problems lies in the data, which in turn gives way to an endless learning process. I have chosen to allocate my personal time among a few challenges ultimately related to data science, whether the solutions to problems are within the biological realm, the economic realm, etc. The important part is what I add to my skills set along the way.
+My name is Zackary, but most people know me as Zack. I am a B. Sc. qualified individual with a passion for the areas of science related to our world and its future. My skills surround technological innovation and how we can use data to solve problems. With a strong understanding of the biological world, my education has sparked a specific interest in environmental problem solving. The most important lesson that I have learnt throughout my academic journey is that the solutions to problems lies in the data, which in turn gives way to an endless learning process. I have chosen to allocate my personal time among a few challenges ultimately related to data science, whether the problems stem from the environment, the economic realm, or elsewhere. What is important are the skills I learn along the way.
 
 ## My academic journey
 
