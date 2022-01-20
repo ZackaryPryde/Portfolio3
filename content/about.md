@@ -22,4 +22,4 @@ Teaching.
 
 ## Sports
 
-Judo. Athletics.
+Judo. Athletics. 
