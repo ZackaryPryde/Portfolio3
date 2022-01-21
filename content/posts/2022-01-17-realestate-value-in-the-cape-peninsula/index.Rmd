@@ -21,9 +21,9 @@ Once the data are appropriately structured, I construct an interactive map that 
 
 ## How?
 
-### Step 1
+### Step 1: Web-scraping
 
-### Step 2
+### Step 2: 
 
 ### Step 3
 
