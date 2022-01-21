@@ -13,7 +13,7 @@ tags:
 
 ## About this project
 
-Cape Town, South Africa is world renowned as beautiful landscape, an attribute that plays a dominant role in the real estate of this region. Property value in the mother city is generally a hot topic among locals and internationals. The general trends in property value over the region are typically known to some extent, and individuals that are interested often map this out by looking over various listings on the web. Here, I aim to summarize property value at the suburban level over the Southern region of the City of Cape Town Metropolitan Municipality (i.e., The Cape Peninsula and surroundings).
+Cape Town, South Africa, is world renowned as beautiful landscape, an attribute that plays a dominant role in the real estate of this region. Property value in the mother city is generally a hot topic among locals and internationals. The general trends in property value over the region are typically known to some extent, and individuals that are interested often map this out by looking over various listings on the web. Here, I aim to summarize property value at the suburban level over the Southern region of the City of Cape Town Metropolitan Municipality (i.e., The Cape Peninsula and surroundings).
 
 Using the R programming language, I write some basic web-scraping code to obtain property value data from a popular website - [Property24](https://www.property24.com/about-us) - over a specified set of filters. As to be expected, web-scraping data may typically fall short in terms of quality. The data acquisition is hence followed by a collaboration of data-wrangling (using R), and manipulation/cleaning using graphical GIS software, QGIS. 
 
