@@ -8,7 +8,7 @@ categories: []
 tags:
   - GIS
   - Geospatial
-  - Machine_learning
+  - Machine-learning
   - R
   - R-markdown
 ---

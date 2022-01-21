@@ -13,7 +13,9 @@ tags:
 
 ## About this project
 
-blah blah blah blah
+Cape Town, South Africa is world renowned as beautiful landscape, an attribute that plays a dominant role in the real estate of this region. Property value in the mother city is generally a hot topic among locals and internationals. What are the general property value margins per suburb 
+
+In this project I demonstrate some basic web-scraping and data wrangling in Rstudio, while working interchangeably with geospatial data and normal data. 
 
 ## How?
 
