@@ -13,4 +13,9 @@ tags:
   - R-markdown
 ---
 
-# About this project
+## About this project
+
+
+## If youre interested...
+
+You can [view the paper here](https://github.com/ZackaryPryde/Project_1/blob/main/PRYZAC001.pdf).
