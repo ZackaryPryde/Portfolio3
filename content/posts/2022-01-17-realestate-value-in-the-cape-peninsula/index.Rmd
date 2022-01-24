@@ -25,6 +25,54 @@ Once the data are appropriately structured, I construct an interactive map that 
 
 On the Property24 website, we first need to define the set of filters for which property advertisements will be selected. For example; this project could choose to filter only properties that are available to lease instead of what I have chosen to filter (properties that are on the market). This is actually the first filter I had enforced on the website. In addition to selecting only properties for sale, I filter a set of areas on the websites map selection feature. Theoretically, one could choose the entire province if they so please, and the result would be a much higher quantity of data. For the sake of simplicity and personal interest, I have selected an extent that represents the Cape Peninsula and surroundings. 
 
+Web-scraping is a neat way to obtain data from a website on the internet. Property24 does in fact sell their property data for a small fee, and this seemed appealing when I first began planning this project. I opted not to purchase these data for a few reasons. For one, purchasing these data eliminates the possibility of having a periodically updated result (unless I periodically purchase the data). A second reason is simply that I saw the web-scraping approach as a learning opportunity. Web-scraping is a great skill for data scientists to obtain, and provides endless opportunities for personal projects such as this one. 
+
+After having set the initial search filters on the website, it is not all that difficult to scrape a page of data. There are some packages that we first need to install so we can call from various libraries in R (see project on GitHub). Additionally, I use an awesome Google Chrome extension called [SelectorGadget](https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb?hl=en) that allows one to highlight components of a web page and obtain the corresponding HTML node text carrying that data. At this point, we can then write the code that scrapes specific data from the website and compiles it into a dataset:
+
+```{r, eval=FALSE, include=TRUE}
+link = "https://www.property24.com/for-sale/advanced-search/results?sp=cid%3d615%2c479%2c478%2c652%2c475%26s%3d11742%2c9044%2c15183%2c9057%2c9040%2c9034%2c9025%2c9047%2c10211%2c12788%2c16635%2c10180%2c9036%2c10213%2c10174%2c9039%2c9067%2c9069%2c9097%2c10178%2c11740%2c12840%2c15132%2c16720%2c10094%2c10195%2c10052%2c10189%2c10207%2c10096%2c10170%2c10204%2c10212%2c10090%2c10179%2c10109%2c10102%2c8778%2c8792%2c8812%2c9118%2c11014%2c11012%2c8661%2c14225%2c14224%2c8669%2c11741%2c8682%2c8679%2c8806%2c8787%2c8734%2c8783%2c8779%2c10157%2c8017%2c9153%2c8683%2c8677%2c8686%2c8717%2c8754%2c9163%2c9145%2c9149%2c9155%2c9166%2c10166%2c9138%2c11021%2c11016%2c11013%2c11015%2c11017%2c9169%2c11018%2c9136%2c9141%2c9143%2c10164%2c10163%2c10161%2c16541%2c10158%2c9119%2c8731%2c8736%2c8730%2c8716%2c8800%2c9029%2c12195%2c17446%2c17447%2c15627%2c9103%2c9101%2c9106%2c15622%2c9104%2c16197%2c9095%2c7851%2c9110%2c9102%2c9105%2c9108%2c9085%2c9107%2c10603%2c9062%2c17448%2c9094%2c16008%2c10203%2c8025%2c8010%2c8005%2c8019%26so%3dNewest#SortOrder"
+page = read_html(link)
+area = page %>% 
+  html_nodes(".p24_regularTile .p24_location") %>% 
+  html_text()
+price = page %>% 
+  html_nodes(".p24_regularTile .p24_price") %>% 
+  html_text()
+
+price <- gsub(" ","", price)
+price <- gsub("\r\n","", price)
+price <- gsub("R","", price)
+
+dat0 = data.frame(area, price, stringsAsFactors = F)
+head(dat0)
+```
+
+This is where we meet our first caveat. We don't just want to scrape one page of property listings. There are many pages (specifically, 143 pages). While we could run this code chunk for each page of the website, it would be a tedious job and the code would be lengthy. Thankfully, there is a simple solution to our dilemma - a "for-loop". Here, I essentially run the same code as before, now iterating the chunk over a specified number of pages. The link that is associated with our website changes by a specific character each time - in this case, after the "https://www.property24.com/for-sale/advanced-search/results/p...", while the remaining part of our link remains the same. 
+
+``` {r, eval=FALSE, include=TRUE}
+dat = data.frame()
+
+for (page_result in seq(from = 1, to = 500, by = 1)) {
+  link = paste0("https://www.property24.com/for-sale/advanced-search/results/p",page_result ,"?sp=cid%3d615%2c479%2c478%2c652%2c475%26s%3d11742%2c9044%2c15183%2c9057%2c9040%2c9034%2c9025%2c9047%2c10211%2c12788%2c16635%2c10180%2c9036%2c10213%2c10174%2c9039%2c9067%2c9069%2c9097%2c10178%2c11740%2c12840%2c15132%2c16720%2c10094%2c10195%2c10052%2c10189%2c10207%2c10096%2c10170%2c10204%2c10212%2c10090%2c10179%2c10109%2c10102%2c8778%2c8792%2c8812%2c9118%2c11014%2c11012%2c8661%2c14225%2c14224%2c8669%2c11741%2c8682%2c8679%2c8806%2c8787%2c8734%2c8783%2c8779%2c10157%2c8017%2c9153%2c8683%2c8677%2c8686%2c8717%2c8754%2c9163%2c9145%2c9149%2c9155%2c9166%2c10166%2c9138%2c11021%2c11016%2c11013%2c11015%2c11017%2c9169%2c11018%2c9136%2c9141%2c9143%2c10164%2c10163%2c10161%2c16541%2c10158%2c9119%2c8731%2c8736%2c8730%2c8716%2c8800%2c9029%2c12195%2c17446%2c17447%2c15627%2c9103%2c9101%2c9106%2c15622%2c9104%2c16197%2c9095%2c7851%2c9110%2c9102%2c9105%2c9108%2c9085%2c9107%2c10603%2c9062%2c17448%2c9094%2c16008%2c10203%2c8025%2c8010%2c8005%2c8019%26so%3dNewest")
+  page = read_html(link)
+  
+  area = page %>% html_nodes(".p24_regularTile .p24_location") %>% html_text()
+  
+  price = page %>% html_nodes(".p24_regularTile .p24_price") %>% html_text()
+  
+  dat = rbind(dat, data.frame(area, price, stringsAsFactors = F))
+  
+  print(paste("page:", page_result))
+}
+
+dat$price <- gsub(" ","", dat$price)
+dat$price <- gsub("\r\n","", dat$price)
+dat$price <- gsub("R","", dat$price)
+head(dat)
+```
+
+Just like that, the property listings I am interested in have been scraped, and are now held in a data frame. In the next steps, I work with these data to clean and manipulate entries to be of the form I need them to produce the result.
+
 ### Step 2: Data-wrangling, geospatial manipulation, and cleaning
 
 ### Step 3: Visualizing the data
@@ -83,6 +131,9 @@ tmap_mode("view")
 (test_map <- tm_shape(CPMn) + 
   tm_polygons("Median.Price", id = "Suburb", palette = "Greens"))
 ```
+
+## Future extensions
+
 
 ## If you are interested...
 
