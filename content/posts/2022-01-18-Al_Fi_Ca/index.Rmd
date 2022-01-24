@@ -18,4 +18,5 @@ tags:
 
 ## If youre interested...
 
-You can [view the paper here](https://github.com/ZackaryPryde/Project_1/blob/main/PRYZAC001.pdf).
+You can [view the paper here](https://github.com/ZackaryPryde/Project_1/blob/322fe8061b41312c792b2d378c06b60518496eb4/PRYZAC001.pdf).
+
