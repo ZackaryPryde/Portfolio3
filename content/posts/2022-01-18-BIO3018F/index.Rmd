@@ -16,3 +16,5 @@ tags:
 # Presentation
 
 embed the youtube video to html at the end of rmd editing otherwise it will be removed.
+
+[View on YouTube](https://www.youtube.com/watch?v=cpNkoVuz-FQ)
