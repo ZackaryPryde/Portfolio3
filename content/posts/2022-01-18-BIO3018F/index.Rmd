@@ -12,9 +12,15 @@ tags:
 
 # About this project
 
+As part of my final-year biological sciences university work, a major assessment in the "Ecology and Evolution" course was a seminar presentation. Students were tasked with presenting a seminar based on a recent journal article relevant to the progression of our knowledge in the fields of ecology and evolution.
+
+The activity aimed to provide a valuable learning experience about the inner workings of science and how to present science. 
+
+The topic that I decided to work on was: "Trend analysis of long-term rainfall data in the
+Upper Karoo of South Africa"
+
+In this study, authors critically evaluate the spatial and temporal patterns in rainfall throughout the upper karoo of South Africa. 
 
 # Presentation
-
-embed the youtube video to html at the end of rmd editing otherwise it will be removed.
 
 [View on YouTube](https://www.youtube.com/watch?v=cpNkoVuz-FQ)
