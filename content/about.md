@@ -30,8 +30,6 @@ Throughout my life sports have played a major role in shaping the person I am to
 From a young age (nine) I represented the provincial judo team. With time, my judo career became more serious, and by the age of sixteen I found myself representing the South African Judo team in international events such as the African Continental championships. At the age of seventeen I obtained my black belt (or "Shodan"). Moving past my final year at high school and into my first years at varsity was a difficult journey. In this time, I continued to climb the national and international athlete rankings. In my initial years in varsity, I decided to continue judo on a more casual level in order to focus on academics, however, this sport will always be close to my heart.
 
 
-
 ### Athletics
 
 In my secondary school years, I was especially competitive in athletics. Going into varsity, I wanted to continue athletics at a casual level, however, prior to the start of my first semester at the University of Cape Town I was selected to represent the university at the Varsity Cup. I went on to represent the university on numerous occasions at various inter-varsity and provincial league athletics meets, and eventually got selected to represent the provincial athletics team at the Athletics South Africa (ASA) championships. What an incredible experience it was! In this year of study, I was awarded the UCT athletics scholarship. After an injury-induced break from sports in 2018, I decided to continue athletics casually to focus on my academics. 
-
