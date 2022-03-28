@@ -12,12 +12,12 @@ tags:
 
 During this internship, teams of four interns were each assigned one case study relating to a specific company. My team worked on the [Onfido](https://onfido.com/) case study. We were tasked with analyzing how identity is being verified and authenticated in the Healthcare market in Germany
 
-## The case study
-
 ## Presentation
 
 [View on YouTube](https://www.youtube.com/watch?v=LQEw9dZELrc)
 
 ## Certificate
 
-![](Portfolio3/themes/hugo-theme-m10c/static/certificate.jpeg)
+```{r certificate, echo=FALSE, out.width = '100%'}
+knitr::include_graphics("certificate.jpeg")
+```
