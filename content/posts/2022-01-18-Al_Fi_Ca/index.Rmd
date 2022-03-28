@@ -27,7 +27,11 @@ In this research exercise, I use a machine-learning spatial correlation model (M
 
 ## The result
 
+In my final submission (a journal-styled article), I report the main result in the form of a static GIS map:
+
 ![](images/AFC.jpeg)
+
+However, this result depends on a collection of other important results and assumptions discussed in the report. 
 
 ## If youre interested...
 
