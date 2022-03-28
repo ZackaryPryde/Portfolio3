@@ -18,6 +18,4 @@ During this internship, teams of four interns were each assigned one case study 
 
 ## Certificate
 
-```{r certificate, echo=FALSE, out.width = '100%'}
-knitr::include_graphics("certificate.jpeg")
-```
+![](images/certificate.jpeg)
