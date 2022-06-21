@@ -1,5 +1,5 @@
 ---
-title: 'Global Change Ecology: Research Project'
+title: 'Global Change Ecology Research Project: Are changes in wildfire patterns a product of climate change?'
 author: 'Zackary Pryde, Prof. MD Cramer'
 date: '2022-05-20'
 slug: []
